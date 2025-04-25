@@ -4,6 +4,7 @@ const bot = new Telegraf(TOKEN);
 
 const web_link = "https://maraki.yenesite.et";
 const web_link2 = "https://maraki.yenesite.et/shop-page/track-order";
+const PORT = process.env.PORT || 3000;
 
 bot.start((ctx) =>
 
@@ -17,3 +18,4 @@ bot.start((ctx) =>
 
 bot.launch();
 
+server.listen(PORT, () => console.log("Server is running on port 3000"));
